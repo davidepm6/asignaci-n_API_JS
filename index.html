@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestión Libros</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Gestión de Libros</h1>
+
+      <section>
+        <h2>Crear un nuevo libro</h2>
+        <form id="form-libro">
+          <input type="text" id="titulo" placeholder="Titulo" required />
+          <input type="text" id="autor" placeholder="Autor" required />
+          <input
+            type="number"
+            id="paginas"
+            placeholder="# de paginas"
+            required
+          />
+          <button type="submit">Guardar</button>
+        </form>
+      </section>
+
+      <section>
+        <h2>Listado de libros</h2>
+        <ul id="lista-libros"></ul>
+      </section>
+
+      <section>
+        <h2>Buscar libro por ID</h2>
+        <input type="text" id="buscar-id" placeholder="ID del libro" />
+        <button id="btn-buscar">Buscar</button>
+        <div id="resultado-busqueda"></div>
+      </section>
+    </div>
+
+    <script src="js/app.js" type="module"></script>
+  </body>
+</html>
